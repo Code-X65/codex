@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en" style=""><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#343535", "secondary-fixed-dim": "#ffb59d", "outline": "#8e9192", "on-tertiary-fixed-variant": "#474743", "primary": "#c8c6c5", "on-secondary-fixed-variant": "#832600", "background": "#121414", "secondary-fixed": "#ffdbd0", "on-background": "#e3e2e2", "surface-tint": "#c8c6c5", "surface": "#121414", "inverse-on-surface": "#2f3131", "error": "#ffb4ab", "on-error-container": "#ffdad6", "inverse-primary": "#5f5e5e", "on-secondary": "#5d1900", "surface-container-low": "#1a1c1c", "on-surface": "#e3e2e2", "on-primary-container": "#7e7c7c", "tertiary-container": "#11110e", "surface-container-highest": "#343535", "outline-variant": "#444748", "on-primary": "#313030", "on-error": "#690005", "secondary": "#ffb59d", "inverse-surface": "#e3e2e2", "on-secondary-container": "#ffddd2", "surface-dim": "#121414", "surface-bright": "#383939", "primary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#0d0e0f", "on-surface-variant": "#c4c7c7", "primary-fixed": "#e5e2e1", "primary-container": "#111111", "surface-container-high": "#292a2a", "tertiary": "#c9c6c1", "on-secondary-fixed": "#390c00", "on-primary-fixed": "#1c1b1b", "on-primary-fixed-variant": "#474646", "on-tertiary": "#31312d", "surface-container": "#1e2020", "tertiary-fixed-dim": "#c9c6c1", "on-tertiary-container": "#7e7d78", "on-tertiary-fixed": "#1c1c18", "error-container": "#93000a", "secondary-container": "#b83900", "tertiary-fixed": "#e5e2dc" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin": "3rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "space-md": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-xl-mobile": [ "Geist" ], "body-lg": [ "Geist" ], "body-sm": [ "Geist" ], "headline-xl": [ "Geist" ], "body-md": [ "Geist" ], "headline-lg": [ "Geist" ], "headline-md": [ "Geist" ], "headline-lg-mobile": [ "Geist" ], "label-code": [ "JetBrains Mono" ], "label-caps": [ "JetBrains Mono" ], "headline-sm": [ "Geist" ] }, "fontSize": { "headline-xl-mobile": [ "2.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-xl": [ "4.5rem", { "lineHeight": "1.05", "letterSpacing": "-0.04em", "fontWeight": "600" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.55", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg": [ "3rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600" } ], "headline-md": [ "1.875rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "headline-lg-mobile": [ "1.875rem", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-code": [ "0.8125rem", { "lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "400" } ], "label-caps": [ "0.6875rem", { "lineHeight": "1.2", "letterSpacing": "0.12em", "fontWeight": "500" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface selection:bg-secondary-container selection:text-on-secondary-container antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-primary-container border-b border-outline-variant"><div class="h-16 w-full px-margin-mobile md:px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-body-lg select-none">token</span><a class="font-label-caps text-label-caps text-on-surface tracking-wider uppercase hover:text-secondary transition-colors" data-path="home" href="#">OMOLOYE BOLUWATIFE (CODEX) <span class="text-outline">//</span> FULL-STACK</a></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-on-surface font-label-caps border-b-2 border-secondary"><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface py-space-sm transition-colors" data-path="about" href="#">About</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface py-space-sm transition-colors" data-path="projects" href="#">Projects</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface py-space-sm transition-colors" data-path="experience" href="#">Experience</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface py-space-sm transition-colors" data-path="blog" href="#">Blog</a></nav><div class="flex items-center gap-space-md"><button aria-label="Toggle System Theme" class="w-8 h-8 rounded border border-outline-variant bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:border-outline transition-colors" type="button"><span class="material-symbols-outlined text-body-md">dark_mode</span></button><a class="hidden sm:inline-flex items-center justify-center h-9 px-space-md bg-secondary text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-wider hover:bg-secondary-fixed transition-colors" data-path="contact" href="mailto:omoloyeamoss65@gmail.com">Contact</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"></div><button aria-label="Open Mobile Navigation" class="lg:hidden w-8 h-8 rounded border border-outline-variant bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" type="button"><span class="material-symbols-outlined text-body-md">menu</span></button></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- SECTION 01: BLUEPRINT HEADER & SCOPE INSTRUMENTATION -->
+<section class="relative w-full px-margin-mobile md:px-margin pt-space-xl pb-space-lg bg-surface">
+<!-- Architectural Grid Background & Hairline Crosshairs -->
+<div class="flex flex-col gap-space-md">
+<!-- Eyebrow & Live Telemetry Metadata -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm border-b border-outline-variant">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">
+            05 // TECHNICAL EXPERTISE // SYSTEM ARCHITECTURE &amp; RUNTIME DOMAINS
+          </span>
+</div>
+<div class="flex items-center gap-space-md font-label-code text-label-code text-on-surface-variant">
+<span class="text-outline">[STATUS: COMPILED_OK]</span>
+<span class="text-outline">//</span>
+<span class="text-secondary-fixed">SPEC.05 FULL-STACK MATRIX</span>
+<span class="hidden sm:inline text-outline">//</span>
+<span class="hidden sm:inline text-on-surface">SYS.LATENCY: 14ms</span>
+</div>
+</div>
+<!-- Main Headline + Supporting Thesis Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end pt-space-sm">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight uppercase">
+            BUILT ACROSS <span class="text-secondary">THE STACK.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            From low-latency state synchronizations to resilient backend fabrics, data topology, and continuous deployment orchestration — I engineer software products that operate with predictable certainty.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-xs font-label-code text-label-code p-space-md bg-surface-container-low border border-outline-variant relative">
+<div class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</div>
+<div class="absolute -bottom-1.5 -right-1.5 text-secondary text-xs select-none">+</div>
+<div class="flex justify-between items-center text-outline">
+<span>DOMAIN LAYERING</span>
+<span class="text-secondary">ACTIVE</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>INTERFACE RENDERING</span>
+<span class="text-secondary-fixed">REACT / TS</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>CONCURRENCY ENGINE</span>
+<span class="text-secondary-fixed">NODE / FASTIFY</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>DATA NORMALIZATION</span>
+<span class="text-secondary-fixed">POSTGRES / REDIS</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>INFRASTRUCTURE FABRIC</span>
+<span class="text-secondary-fixed">DOCKER / CI/CD</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 02: CAPABILITY MATRIX (4-PANEL BLUEPRINT WITH LIVE CODE & TELEMETRY SCHEMATICS) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-lg bg-surface">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- 01 // FRONTEND ENGINEERING -->
+<div class="group relative flex flex-col bg-surface-container-low border border-outline-variant hover:border-secondary transition-colors duration-200">
+<!-- Corner Crosshairs -->
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -top-1.5 -right-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -bottom-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -bottom-1.5 -right-1.5 text-secondary text-xs select-none">+</span>
+<!-- Module Top Header -->
+<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container border-b border-outline-variant font-label-code text-label-code">
+<div class="flex items-center gap-space-xs">
+<span class="text-secondary">01</span>
+<span class="text-on-surface uppercase font-medium">INTERFACE // UI KERNEL</span>
+</div>
+<span class="text-secondary tracking-widest text-xs uppercase">[HYDRATION: 120ms]</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md flex-grow">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase">Frontend Engineering</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Building responsive, accessible interfaces with an emphasis on performance, reusable components, and deterministic UI state machines.
+            </p>
+</div>
+<!-- Technologies Monospace Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ TECH // REACT ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ NEXT.JS ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ TYPESCRIPT ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ TAILWIND CSS ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ XSTATE ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ RADIX UI ]</span>
+</div>
+<!-- Engineering Depth Breakdown -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs font-label-code text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Sub-second render budget enforcement</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Zero-layout-shift client hydration</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>WCAG 2.1 AA a11y keyboard tree</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Reactive sync via custom webhooks</span>
+</div>
+</div>
+<!-- Technical Schematic Visual: Component Tree & Frame Budget -->
+<div class="p-space-sm bg-surface-container-lowest border border-outline-variant font-label-code text-label-code">
+<div class="flex items-center justify-between text-outline pb-1 border-b border-outline-variant text-[10px]">
+<span>VIRTUAL_DOM // FRAME_BUDGET</span>
+<span class="text-secondary">TARGET: 60FPS</span>
+</div>
+<!-- Mock Component Wireframe Tree -->
+<div class="pt-2 flex flex-col gap-1 text-[11px] text-on-surface-variant font-mono">
+<div class="flex items-center justify-between">
+<span>&lt;WorkspaceRoot status="MOUNTED"&gt;</span>
+<span class="text-outline">0.4ms</span>
+</div>
+<div class="flex items-center justify-between pl-3 text-secondary-fixed">
+<span>├── &lt;TelemetryStream rx={p2p} buffer={4096} /&gt;</span>
+<span class="text-outline">1.2ms</span>
+</div>
+<div class="flex items-center justify-between pl-6 text-on-surface">
+<span>│   └── &lt;SparkCanvas points={vector128} /&gt;</span>
+<span class="text-secondary">0.8ms [JIT]</span>
+</div>
+<div class="flex items-center justify-between pl-3 text-secondary-fixed">
+<span>└── &lt;KernelControlTray rbac="SUPERUSER" /&gt;</span>
+<span class="text-outline">0.2ms</span>
+</div>
+</div>
+</div>
+<!-- Evidence Link -->
+<div class="pt-space-xs mt-auto">
+<a class="inline-flex items-center gap-space-xs font-label-caps text-label-caps text-secondary hover:text-secondary-fixed tracking-wider uppercase transition-colors" data-path="projects" href="#">
+<span>VERIFIED IN PROD: ORVIO &amp; CAMPUSNOVA INTERFACES</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 02 // BACKEND ENGINEERING -->
+<div class="group relative flex flex-col bg-surface-container-low border border-outline-variant hover:border-secondary transition-colors duration-200">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -top-1.5 -right-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -bottom-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -bottom-1.5 -right-1.5 text-secondary text-xs select-none">+</span>
+<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container border-b border-outline-variant font-label-code text-label-code">
+<div class="flex items-center gap-space-xs">
+<span class="text-secondary">02</span>
+<span class="text-on-surface uppercase font-medium">DISPATCH // SERVICE LOGIC</span>
+</div>
+<span class="text-secondary tracking-widest text-xs uppercase">[THROUGHPUT: 18.4K RPS]</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md flex-grow">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase">Backend Engineering</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Designing modular microservices, asynchronous task pipelines, and resilient HTTP/gRPC interfaces built for high availability.
+            </p>
+</div>
+<!-- Technologies Monospace Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ TECH // NODE.JS ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ FASTIFY ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ FASTAPI ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ PYTHON ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ REST / GRAPHQL ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ JWT / RBAC ]</span>
+</div>
+<!-- Engineering Depth Breakdown -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs font-label-code text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Asynchronous request queues (BullMQ)</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Idempotent webhook delivery guarantees</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Token-bucket rate limiting</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Cryptographic signature verification</span>
+</div>
+</div>
+<!-- Technical Schematic Visual: REST Dispatch & Redis Worker -->
+<div class="p-space-sm bg-surface-container-lowest border border-outline-variant font-label-code text-label-code">
+<div class="flex items-center justify-between text-outline pb-1 border-b border-outline-variant text-[10px]">
+<span>RPC // INGRESS DISPATCH</span>
+<span class="text-secondary">PROTOCOL: HTTP/2</span>
+</div>
+<div class="pt-2 flex flex-col gap-1 text-[11px] font-mono">
+<div class="flex items-center justify-between">
+<span class="text-on-surface">POST /api/v1/event/dispatch</span>
+<span class="text-secondary">202 ACCEPTED</span>
+</div>
+<div class="flex items-center gap-2 pl-3 text-outline">
+<span>↳</span>
+<span class="text-secondary-fixed">Payload Verified via Ed25519</span>
+<span class="text-[10px] text-outline">t+0.6ms</span>
+</div>
+<div class="flex items-center gap-2 pl-3 text-outline">
+<span>↳</span>
+<span class="text-secondary-fixed">Enqueue -&gt; queue:telemetry:p1</span>
+<span class="text-[10px] text-outline">t+1.1ms</span>
+</div>
+<div class="flex items-center justify-between pl-6 text-on-surface">
+<span>Worker Process [PID: 4092]</span>
+<span class="text-secondary">ACK_COMMITTED</span>
+</div>
+</div>
+</div>
+<!-- Evidence Link -->
+<div class="pt-space-xs mt-auto">
+<a class="inline-flex items-center gap-space-xs font-label-caps text-label-caps text-secondary hover:text-secondary-fixed tracking-wider uppercase transition-colors" data-path="projects" href="#">
+<span>VERIFIED IN PROD: TELEMETRY DISPATCH &amp; QUEUES</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 03 // DATA & SYSTEM ARCHITECTURE -->
+<div class="group relative flex flex-col bg-surface-container-low border border-outline-variant hover:border-secondary transition-colors duration-200">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -top-1.5 -right-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -bottom-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -bottom-1.5 -right-1.5 text-secondary text-xs select-none">+</span>
+<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container border-b border-outline-variant font-label-code text-label-code">
+<div class="flex items-center gap-space-xs">
+<span class="text-secondary">03</span>
+<span class="text-on-surface uppercase font-medium">PERSISTENCE // RELATIONAL TOPO</span>
+</div>
+<span class="text-secondary tracking-widest text-xs uppercase">[ACID // ISOLATED]</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md flex-grow">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase">Data &amp; System Architecture</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Structuring application data, building strict normalization schemas, and designing caching layers that scale transparently under load.
+            </p>
+</div>
+<!-- Technologies Monospace Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ TECH // POSTGRESQL ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ MYSQL ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ REDIS KEY-STORE ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ PRISMA / DRIZZLE ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ MIGRATION RUNNERS ]</span>
+</div>
+<!-- Engineering Depth Breakdown -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs font-label-code text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>ACID compliance &amp; serializable isolation</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Tenant-based schema partitioning</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Predictive Redis cache warming</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>B-Tree &amp; GiST indexing heuristics</span>
+</div>
+</div>
+<!-- Technical Schematic Visual: Relational Nodes & Key Mappings -->
+<div class="p-space-sm bg-surface-container-lowest border border-outline-variant font-label-code text-label-code">
+<div class="flex items-center justify-between text-outline pb-1 border-b border-outline-variant text-[10px]">
+<span>SCHEMA // ENTITY GRAPH (v3.4)</span>
+<span class="text-secondary">POOL: 32 CONN</span>
+</div>
+<div class="pt-2 flex flex-col gap-1 text-[11px] font-mono">
+<div class="flex items-center justify-between">
+<span class="text-secondary">[TABLE: org_nodes]</span>
+<span class="text-outline">PK: node_uuid (UUIDv4)</span>
+</div>
+<div class="flex items-center justify-between pl-3 text-secondary-fixed">
+<span>├── [1:N] telemetry_records</span>
+<span class="text-outline">FK: node_uuid</span>
+</div>
+<div class="flex items-center justify-between pl-6 text-on-surface-variant">
+<span>│   └── partition by RANGE (created_at)</span>
+<span class="text-secondary">RETENTION: 90d</span>
+</div>
+<div class="flex items-center justify-between pl-3 text-secondary-fixed">
+<span>└── [1:1] cache_projection (Redis)</span>
+<span class="text-secondary">TTL: 300s</span>
+</div>
+</div>
+</div>
+<!-- Evidence Link -->
+<div class="pt-space-xs mt-auto">
+<a class="inline-flex items-center gap-space-xs font-label-caps text-label-caps text-secondary hover:text-secondary-fixed tracking-wider uppercase transition-colors" data-path="projects" href="#">
+<span>VERIFIED IN PROD: MULTI-TENANT ARCHITECTURES</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 04 // ENGINEERING OPERATIONS & RELIABILITY -->
+<div class="group relative flex flex-col bg-surface-container-low border border-outline-variant hover:border-secondary transition-colors duration-200">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -top-1.5 -right-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -bottom-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -bottom-1.5 -right-1.5 text-secondary text-xs select-none">+</span>
+<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container border-b border-outline-variant font-label-code text-label-code">
+<div class="flex items-center gap-space-xs">
+<span class="text-secondary">04</span>
+<span class="text-on-surface uppercase font-medium">OPERATIONS // RUNTIME SRE</span>
+</div>
+<span class="text-secondary tracking-widest text-xs uppercase">[UPTIME: 99.98%]</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md flex-grow">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase">Operations &amp; Reliability</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Improving stability through rigorous automated testing, container orchestration, idempotent deploys, and structured system telemetry.
+            </p>
+</div>
+<!-- Technologies Monospace Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ TECH // DOCKER ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ GITHUB ACTIONS ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ LINUX CLOUD ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ PROMETHEUS ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ GRAFANA ]</span>
+<span class="px-2 py-0.5 bg-surface-container text-secondary border border-outline-variant font-label-caps text-label-caps">[ NGINX ]</span>
+</div>
+<!-- Engineering Depth Breakdown -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs font-label-code text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Zero-downtime blue/green container rollouts</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Strict typecheck &amp; lint test matrix in CI</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Synthetic health pings &amp; heartbeats</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-secondary">▸</span>
+<span>Blameless root-cause telemetry audits</span>
+</div>
+</div>
+<!-- Technical Schematic Visual: CI/CD Pipeline Steps -->
+<div class="p-space-sm bg-surface-container-lowest border border-outline-variant font-label-code text-label-code">
+<div class="flex items-center justify-between text-outline pb-1 border-b border-outline-variant text-[10px]">
+<span>PIPELINE // RUNTIME_STAGES</span>
+<span class="text-secondary">BRANCH: MAIN</span>
+</div>
+<div class="pt-2 flex flex-col gap-1 text-[11px] font-mono">
+<div class="flex items-center justify-between">
+<span class="text-on-surface">1. Static Verification (Type / ESLint)</span>
+<span class="text-secondary">PASSED (28s)</span>
+</div>
+<div class="flex items-center justify-between pl-3 text-secondary-fixed">
+<span>2. Integration Suite (Postgres mock)</span>
+<span class="text-secondary">PASSED (44s)</span>
+</div>
+<div class="flex items-center justify-between pl-3 text-secondary-fixed">
+<span>3. Build Multi-arch Container</span>
+<span class="text-secondary">LAYER_CACHE (12s)</span>
+</div>
+<div class="flex items-center justify-between pl-6 text-on-surface">
+<span>4. Health Check &amp; Traffic Shift (0% -&gt; 100%)</span>
+<span class="text-secondary">ACTIVE // 0 DOWNTIME</span>
+</div>
+</div>
+</div>
+<!-- Evidence Link -->
+<div class="pt-space-xs mt-auto">
+<a class="inline-flex items-center gap-space-xs font-label-caps text-label-caps text-secondary hover:text-secondary-fixed tracking-wider uppercase transition-colors" data-path="projects" href="#">
+<span>VERIFIED IN PROD: CONTINUOUS ROLLOUT INFRASTRUCTURE</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 03: ENGINEERING WORKFLOW ("HOW I SHIP SOFTWARE") -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface">
+<div class="flex flex-col gap-space-md">
+<!-- Section Tag -->
+<div class="flex items-center justify-between border-b border-outline-variant pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">
+            WORKFLOW PROTOCOL // CHRONOLOGICAL EXECUTION
+          </span>
+</div>
+<span class="font-label-code text-label-code text-outline">LIFECYCLE VER. 4.8</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">
+          How I Ship <span class="text-secondary">Software</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          An intentional, repeatable sequence that prioritizes specification clarity early and empirical verification at release.
+        </p>
+</div>
+<!-- 5-Stage Blueprint Sequence Strip -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-sm pt-space-md">
+<!-- Stage 01 -->
+<div class="relative p-space-md bg-surface-container-low border border-outline-variant flex flex-col gap-space-sm group hover:border-secondary transition-colors">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-secondary">01 // STEP</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Discover</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Understand the core user, technical friction, operational constraints, and domain scope prior to single-line implementation.
+          </p>
+<div class="pt-space-xs mt-auto font-label-code text-xs text-outline border-t border-outline-variant">
+            PHASE: DOMAIN_AUDIT
+          </div>
+</div>
+<!-- Stage 02 -->
+<div class="relative p-space-md bg-surface-container-low border border-outline-variant flex flex-col gap-space-sm group hover:border-secondary transition-colors">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-secondary">02 // STEP</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Architect</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Define strict relational schemas, bounded context microservices, API contracts, and deliberate trade-offs.
+          </p>
+<div class="pt-space-xs mt-auto font-label-code text-xs text-outline border-t border-outline-variant">
+            PHASE: SPEC_DEFINITION
+          </div>
+</div>
+<!-- Stage 03 -->
+<div class="relative p-space-md bg-surface-container-low border border-outline-variant flex flex-col gap-space-sm group hover:border-secondary transition-colors">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-secondary">03 // STEP</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Implement</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Write modular frontend systems, robust asynchronous backend logic, and clean typing across the wire.
+          </p>
+<div class="pt-space-xs mt-auto font-label-code text-xs text-outline border-t border-outline-variant">
+            PHASE: CODE_SYNTHESIS
+          </div>
+</div>
+<!-- Stage 04 -->
+<div class="relative p-space-md bg-surface-container-low border border-outline-variant flex flex-col gap-space-sm group hover:border-secondary transition-colors">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-secondary">04 // STEP</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Validate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Execute automated testing suites, perform static analysis, simulate edge latency, and conduct zero-trust audits.
+          </p>
+<div class="pt-space-xs mt-auto font-label-code text-xs text-outline border-t border-outline-variant">
+            PHASE: VERIFICATION_MATRIX
+          </div>
+</div>
+<!-- Stage 05 -->
+<div class="relative p-space-md bg-surface-container-low border border-outline-variant flex flex-col gap-space-sm group hover:border-secondary transition-colors">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-secondary">05 // STEP</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Deliver</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Orchestrate container rollouts, monitor real-time telemetry, provide comprehensive docs, and iterate from feedback.
+          </p>
+<div class="pt-space-xs mt-auto font-label-code text-xs text-outline border-t border-outline-variant">
+            PHASE: LIVE_OBSERVABILITY
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 04: CORE ENGINEERING PRINCIPLES ("WHAT MATTERS IN MY CODE") -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface">
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between border-b border-outline-variant pb-space-sm gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">
+            ENGINEERING CREED // ARCHITECTURAL AXIOMS
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight mt-1">
+            What Matters in <span class="text-secondary">My Code</span>
+</h2>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">
+          GUARANTEES // ZERO COMPROMISES
+        </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Principle 01 -->
+<div class="p-space-lg bg-surface-container-low border border-outline-variant relative flex flex-col justify-between">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<div>
+<span class="font-label-code text-label-code text-secondary block mb-space-xs">AXIOM // 01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Maintainability</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+              Readable, explicit code over premature abstractions. Systems must remain clear to the next engineer reading the codebase at 3 AM.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant text-[11px] font-label-code text-outline">
+            METRIC: COGNITIVE_LOAD &lt; MIN
+          </div>
+</div>
+<!-- Principle 02 -->
+<div class="p-space-lg bg-surface-container-low border border-outline-variant relative flex flex-col justify-between">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<div>
+<span class="font-label-code text-label-code text-secondary block mb-space-xs">AXIOM // 02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Zero-Trust Security</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+              Authorization and input sanitization treated as baseline invariants, not late stage checklist items. Every API boundary is verified.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant text-[11px] font-label-code text-outline">
+            STANDARD: CRYPTOGRAPHIC_PROOF
+          </div>
+</div>
+<!-- Principle 03 -->
+<div class="p-space-lg bg-surface-container-low border border-outline-variant relative flex flex-col justify-between">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<div>
+<span class="font-label-code text-label-code text-secondary block mb-space-xs">AXIOM // 03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Empirical Speed</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+              Optimization guided by p99 latency telemetry and real memory profiles, never intuition or dogmatic framework trends.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant text-[11px] font-label-code text-outline">
+            TELEMETRY: P99 &lt; 80ms
+          </div>
+</div>
+<!-- Principle 04 -->
+<div class="p-space-lg bg-surface-container-low border border-outline-variant relative flex flex-col justify-between">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<div>
+<span class="font-label-code text-label-code text-secondary block mb-space-xs">AXIOM // 04</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Explicit Contracts</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+              Strict schemas, comprehensive type invariants, and clear system boundaries prevent silent run-time regression failures.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant text-[11px] font-label-code text-outline">
+            CONTRACT: STRICT_TYPING
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 05: CLOSING TRANSITION STRIP (FORWARD TO BLOG / ESSAYS) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface border-t border-outline-variant">
+<div class="p-space-lg md:p-space-xl bg-surface-container border border-outline-variant relative flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+<span class="absolute -top-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -top-1.5 -right-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -bottom-1.5 -left-1.5 text-secondary text-xs select-none">+</span>
+<span class="absolute -bottom-1.5 -right-1.5 text-secondary text-xs select-none">+</span>
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">
+          EDITORIAL SUMMARY // SYSTEM RUNTIME PERSPECTIVE
+        </span>
+<blockquote class="font-headline-sm text-headline-sm text-on-surface tracking-tight italic">
+          "Architecture is defined not by frameworks, but by intentional trade-offs and operational discipline."
+        </blockquote>
+<span class="font-label-code text-label-code text-outline">
+          // OMOLOYE BOLUWATIFE (CODEX) — NOTE ON SYSTEM HYGIENE
+        </span>
+</div>
+<a class="inline-flex items-center gap-space-sm px-space-lg py-space-md bg-secondary text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-wider hover:bg-secondary-fixed transition-colors duration-150" data-path="blog" href="#">
+<span>NEXT CHAPTER: TECHNICAL ESSAYS &amp; BLOG</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant"><div class="w-full px-margin-mobile md:px-margin py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-body-sm">terminal</span><span class="font-label-caps text-label-caps text-on-surface uppercase">ARCHITECTURAL RUNTIME // SYS.VER 4.19</span></div><span class="font-body-sm text-body-sm text-outline">Crafting high-throughput distributed systems &amp; editorial precision web platforms.</span></div><div class="flex items-center gap-space-lg"><span class="font-label-caps text-label-caps text-on-surface-variant">© 2025 OMOLOYE BOLUWATIFE (CODEX)</span></div></div></footer>
+</body></html>
