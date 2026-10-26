@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en" style=""><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#343535", "secondary-fixed-dim": "#ffb59d", "outline": "#8e9192", "on-tertiary-fixed-variant": "#474743", "primary": "#c8c6c5", "on-secondary-fixed-variant": "#832600", "background": "#121414", "secondary-fixed": "#ffdbd0", "on-background": "#e3e2e2", "surface-tint": "#c8c6c5", "surface": "#121414", "inverse-on-surface": "#2f3131", "error": "#ffb4ab", "on-error-container": "#ffdad6", "inverse-primary": "#5f5e5e", "on-secondary": "#5d1900", "surface-container-low": "#1a1c1c", "on-surface": "#e3e2e2", "on-primary-container": "#7e7c7c", "tertiary-container": "#11110e", "surface-container-highest": "#343535", "outline-variant": "#444748", "on-primary": "#313030", "on-error": "#690005", "secondary": "#FF6B35", "inverse-surface": "#e3e2e2", "on-secondary-container": "#ffddd2", "surface-dim": "#121414", "surface-bright": "#383939", "primary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#0d0e0f", "on-surface-variant": "#c4c7c7", "primary-fixed": "#e5e2e1", "primary-container": "#111111", "surface-container-high": "#292a2a", "tertiary": "#c9c6c1", "on-secondary-fixed": "#390c00", "on-primary-fixed": "#1c1b1b", "on-primary-fixed-variant": "#474646", "on-tertiary": "#31312d", "surface-container": "#1e2020", "tertiary-fixed-dim": "#c9c6c1", "on-tertiary-container": "#7e7d78", "on-tertiary-fixed": "#1c1c18", "error-container": "#93000a", "secondary-container": "#b83900", "tertiary-fixed": "#e5e2dc" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin": "3rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "space-md": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-xl-mobile": [ "Geist" ], "body-lg": [ "Geist" ], "body-sm": [ "Geist" ], "headline-xl": [ "Geist" ], "body-md": [ "Geist" ], "headline-lg": [ "Geist" ], "headline-md": [ "Geist" ], "headline-lg-mobile": [ "Geist" ], "label-code": [ "JetBrains Mono" ], "label-caps": [ "JetBrains Mono" ], "headline-sm": [ "Geist" ] }, "fontSize": { "headline-xl-mobile": [ "2.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-xl": [ "4.5rem", { "lineHeight": "1.05", "letterSpacing": "-0.04em", "fontWeight": "600" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.55", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg": [ "3rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600" } ], "headline-md": [ "1.875rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "headline-lg-mobile": [ "1.875rem", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-code": [ "0.8125rem", { "lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "400" } ], "label-caps": [ "0.6875rem", { "lineHeight": "1.2", "letterSpacing": "0.12em", "fontWeight": "500" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface selection:bg-secondary-container selection:text-on-secondary-container antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-primary-container border-b border-outline-variant"><div class="h-16 w-full px-margin-mobile md:px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-body-lg select-none">token</span><a class="font-label-caps text-label-caps text-on-surface tracking-wider uppercase hover:text-secondary transition-colors" data-path="home" href="#">OMOLOYE BOLUWATIFE (CODEX) <span class="text-outline">//</span> FULL-STACK &amp; AI SYSTEMS</a></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-on-surface font-label-caps border-b-2 border-secondary"><a class="font-label-caps text-label-caps hover:text-on-surface py-space-sm transition-colors text-on-surface border-b-2 border-secondary" data-path="about" href="#">About</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface py-space-sm transition-colors" data-path="projects" href="#">Projects</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface py-space-sm transition-colors" data-path="experience" href="#">Experience</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface py-space-sm transition-colors" data-path="blog" href="#">Blog</a></nav><div class="flex items-center gap-space-md"><button aria-label="Toggle System Theme" class="w-8 h-8 rounded border border-outline-variant bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:border-outline transition-colors" type="button"><span class="material-symbols-outlined text-body-md">dark_mode</span></button><a class="hidden sm:inline-flex items-center justify-center h-9 px-space-md bg-secondary text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-wider hover:bg-secondary-fixed transition-colors font-medium" data-path="contact" href="mailto:omoloyeamoss65@gmail.com">Contact</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center font-label-caps text-on-primary font-semibold text-[0.6875rem]">CX</div><button aria-label="Open Mobile Navigation" class="lg:hidden w-8 h-8 rounded border border-outline-variant bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" type="button"><span class="material-symbols-outlined text-body-md">menu</span></button></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll("header nav a");
+      navLinks.forEach((link) => {
+        if (
+          link.getAttribute("data-path") === "about" ||
+          link.textContent.trim().toLowerCase() === "about"
+        ) {
+          link.classList.remove("text-on-surface-variant");
+          link.classList.add(
+            "text-on-surface",
+            "font-label-caps",
+            "border-b-2",
+            "border-secondary"
+          );
+        }
+      });
+    });
+  </script>
+<!-- SECTION 1: EDITORIAL HEADER & METADATA BANNER -->
+<section class="w-full px-margin-mobile md:px-margin pt-space-xl pb-space-lg">
+<div class="w-full bg-surface-container-low p-space-lg md:p-space-xl relative overflow-hidden">
+<div class="flex flex-col gap-space-md">
+<!-- Eyebrow Tag -->
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">
+            02 // ABOUT THE ENGINEER
+          </span>
+<span class="text-outline-variant font-label-code text-label-code hidden sm:inline">SYS.ARCH: SPEC-84 // AI-CTX-RUN</span>
+</div>
+<!-- Massive Editorial Display Headline -->
+<h1 class="font-headline-xl text-headline-xl tracking-tight text-on-surface uppercase max-w-5xl">
+          MORE THAN JUST CODE. <span class="text-secondary">ENGINEERED INTELLIGENCE.</span>
+</h1>
+<!-- Sub-statement -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+          I build digital products by connecting thoughtful interfaces, reliable
+          systems, advanced AI context pipelines, and practical engineering decisions.
+        </p>
+<!-- Technical Telemetry / System Metadata -->
+<div class="mt-space-md pt-space-md bg-surface-container-lowest p-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface uppercase">OMOLOYE BOLUWATIFE</span>
+<span class="text-outline font-label-code text-label-code">//</span>
+<span class="font-label-caps text-label-caps text-secondary">CALLSIGN: CODEX</span>
+<span class="text-outline font-label-code text-label-code">//</span>
+<span class="font-label-code text-label-code text-on-surface-variant">04+ YRS FULL-STACK &amp; AI SYSTEMS</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-code text-label-code text-secondary hover:text-on-surface transition-colors" href="mailto:omoloyeamoss65@gmail.com">
+<span class="material-symbols-outlined text-body-sm">alternate_email</span>
+<span class="">omoloyeamoss65@gmail.com</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: TWO-COLUMN MAIN ABOUT LAYOUT -->
+<section class="w-full px-margin-mobile md:px-margin py-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Editorial Photography & Profile Dossier -->
+<div class="lg:col-span-5 flex flex-col bg-surface-container-low p-space-md md:p-space-lg relative">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">IDENTIFIER // DOSSIER-409</span>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-secondary">VERIFIED</span>
+</div>
+</div>
+<!-- Chiaroscuro Portrait Frame -->
+<div class="relative w-full aspect-[3/4] bg-surface-container-lowest overflow-hidden my-space-sm group">
+<img alt="Omoloye Boluwatife (Codex) monochrome portrait" class="w-full h-full object-cover grayscale contrast-125 object-top transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEe93NwymDP3oH0EcOdEiF4YNn4hbZsABpfzuItMolOU0CdrSw8qQtpsGHG5-qlg4fL6CjrZ7SGQCubDNIEtakXNn8HeevK1QO90f7SJNnwzGvRaQwjTqH7aI7DsKrKngXsSBTR1vq8eGYNVzOtuApgiVHm6On1e4C5Q4qNjf-mBB2-fgsQUuXLabf02gtU8lYcKgDzLxd21OwthRniOwjvmor6ASFXnVj3fRsVUq_6-34AUOytez5FQ4cr1IiH1eJpvk"/>
+<!-- Live Overlay Telemetry Pill -->
+<div class="absolute top-space-sm left-space-sm bg-surface-container-lowest/90 backdrop-blur-sm p-space-xs px-space-sm flex flex-col gap-0.5">
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-caps text-[0.625rem] text-secondary tracking-widest uppercase">SYS.ONLINE</span>
+</div>
+<span class="font-label-code text-[0.6875rem] text-on-surface font-semibold">99.98% RELIABILITY</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm bg-surface-container-lowest/90 backdrop-blur-sm p-space-xs px-space-sm text-right">
+<span class="font-label-caps text-[0.625rem] text-outline tracking-wider uppercase block">ROLE</span>
+<span class="font-label-code text-[0.6875rem] text-on-surface">FULL-STACK + AI/CONTEXT SPECIALIST</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm bg-surface-container-lowest/90 backdrop-blur-sm p-space-xs px-space-sm text-left">
+<span class="font-label-caps text-[0.625rem] text-outline tracking-wider uppercase block">CALLSIGN</span>
+<span class="font-label-code text-[0.6875rem] text-secondary font-semibold">CODEX</span>
+</div>
+</div>
+<!-- Bio Narrative & Contact Link -->
+<div class="flex flex-col gap-space-sm pt-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary">[ SPEC ]</span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">FULL-STACK &amp; AI SYSTEMS SPECIALIST</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            I am a full-stack software engineer and AI systems specialist. Beyond traditional development, I specialize in Prompt Engineering, Context Engineering, and AI-augmented application delivery across web, mobile, and battle-tested backends. Over years of working directly alongside system designers, business analysts, and cross-functional teams, I bridge the gap between high-level business logic, architectural blueprints, and high-performance, secure software.
+          </p>
+<a class="mt-space-xs inline-flex items-center justify-between p-space-md bg-surface-container hover:bg-surface-container-high transition-colors group" href="mailto:omoloyeamoss65@gmail.com">
+<span class="font-label-code text-label-code text-on-surface">omoloyeamoss65@gmail.com</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform text-body-md">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- RIGHT COLUMN: Engineering Philosophy -->
+<div class="lg:col-span-7 flex flex-col bg-surface-container-low p-space-lg md:p-space-xl">
+<div class="flex items-center justify-between pb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-headline-sm">view_in_ar</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">
+              HOW I APPROACH ENGINEERING
+            </h2>
+</div>
+<span class="font-label-code text-label-code text-outline hidden sm:inline">PHILOSOPHY // 03 CORE</span>
+</div>
+<!-- Principles List -->
+<div class="flex flex-col divide-y divide-outline-variant/30">
+<!-- Principle 01 -->
+<div class="py-space-lg group transition-colors duration-300 hover:bg-surface-container/50 p-space-sm -mx-space-sm rounded">
+<div class="flex items-start gap-space-md">
+<span class="font-label-code text-headline-md text-secondary select-none font-semibold leading-none">01</span>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase group-hover:text-secondary transition-colors">
+                  CONTEXT &amp; PROMPT ENGINEERING
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Prompt &amp; context architecture are foundational engineering disciplines. I design structured context injection pipelines, deterministic system prompts, and AI-assisted workflows to accelerate development without sacrificing code hygiene or reliability.
+                </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<span class="font-label-caps text-label-caps text-outline uppercase">PRIORITY:</span>
+<span class="font-label-code text-label-code text-tertiary-fixed-dim">Structured Ingestion, Deterministic Tokens, Precision Augmentation</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Principle 02 -->
+<div class="py-space-lg group transition-colors duration-300 hover:bg-surface-container/50 p-space-sm -mx-space-sm rounded">
+<div class="flex items-start gap-space-md">
+<span class="font-label-code text-headline-md text-secondary select-none font-semibold leading-none">02</span>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase group-hover:text-secondary transition-colors">
+                  SECURE &amp; RESILIENT FULL-STACK
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Building robust web, mobile, and backend systems. Emphasizing zero-trust authentication, hardened API boundaries, SQL/relational data integrity, and sub-second performance across distributed layers.
+                </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<span class="font-label-caps text-label-caps text-outline uppercase">METRIC:</span>
+<span class="font-label-code text-label-code text-tertiary-fixed-dim">Zero-Trust Boundaries, Fault Tolerance, Sub-Second Latency</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Principle 03 -->
+<div class="py-space-lg group transition-colors duration-300 hover:bg-surface-container/50 p-space-sm -mx-space-sm rounded">
+<div class="flex items-start gap-space-md">
+<span class="font-label-code text-headline-md text-secondary select-none font-semibold leading-none">03</span>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase group-hover:text-secondary transition-colors">
+                  CROSS-FUNCTIONAL ALIGNMENT
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Strong track record collaborating with system designers, business analysts, and product managers. Translating complex user stories and technical diagrams into production systems with zero ambiguity.
+                </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<span class="font-label-caps text-label-caps text-outline uppercase">HORIZON:</span>
+<span class="font-label-code text-label-code text-tertiary-fixed-dim">BA Requirements Translation &amp; Architectural RFCs</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro Telemetry Sparkline Component -->
+<div class="mt-space-md bg-surface-container p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">RUNTIME EFFICIENCY INDEX</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">O(1) ARCHITECTURAL DISCIPLINE</span>
+</div>
+<svg class="w-36 h-8 text-secondary" fill="none" viewbox="0 0 144 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 24L24 24L36 8L52 28L68 12L84 20L100 4L116 18L132 18L144 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: TECHNICAL BREADTH (ARCHITECTURAL STRIP) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-lg">
+<div class="w-full bg-surface-container-low p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-body-md">memory</span>
+<h2 class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest">
+            MY ENGINEERING TOOLKIT // RUNTIME MATRIX
+          </h2>
+</div>
+<span class="font-label-code text-label-code text-outline">ACTIVE PROFICIENCY: 4+ YEARS</span>
+</div>
+<!-- 4-Column Grid Strip -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- 01 AI & CONTEXT ENGINEERING -->
+<div class="bg-surface-container p-space-md flex flex-col gap-space-md group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">[ 01 // AI &amp; CONTEXT ]</span>
+<span class="material-symbols-outlined text-outline text-body-sm">neurology</span>
+</div>
+<ul class="flex flex-col gap-space-xs">
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">Advanced Prompt Engineering</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">Context Window Management</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">AI-Augmented Development</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">LLM Integration &amp; Orchestration</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">Synthetic Test Scaffolding</span>
+</li>
+</ul>
+</div>
+<!-- 02 WEB & MOBILE PLATFORMS -->
+<div class="bg-surface-container p-space-md flex flex-col gap-space-md group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">[ 02 // WEB &amp; MOBILE ]</span>
+<span class="material-symbols-outlined text-outline text-body-sm">devices</span>
+</div>
+<ul class="flex flex-col gap-space-xs">
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">React.js &amp; Next.js</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">React Native (Mobile)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">JavaScript / TypeScript</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">Responsive &amp; Accessible UI</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">State Hydration &amp; Fluid CSS</span>
+</li>
+</ul>
+</div>
+<!-- 03 SECURE BACKEND RUNTIME -->
+<div class="bg-surface-container p-space-md flex flex-col gap-space-md group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">[ 03 // SECURE BACKEND ]</span>
+<span class="material-symbols-outlined text-outline text-body-sm">dns</span>
+</div>
+<ul class="flex flex-col gap-space-xs">
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">Node.js &amp; Fastify</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">RESTful APIs &amp; Microservices</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">SQL / PostgreSQL / Prisma</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">Redis Caching &amp; Ingress Guards</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">AuthN/AuthZ &amp; Zero-Trust Security</span>
+</li>
+</ul>
+</div>
+<!-- 04 ARCHITECTURE & COLLABORATION -->
+<div class="bg-surface-container p-space-md flex flex-col gap-space-md group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">[ 04 // ARCH &amp; COLLAB ]</span>
+<span class="material-symbols-outlined text-outline text-body-sm">hub</span>
+</div>
+<ul class="flex flex-col gap-space-xs">
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">Working with System Designers</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">Business Analyst Req Translation</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">Technical Specifications &amp; RFCs</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">CI/CD &amp; Automated Testing</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="font-label-code text-secondary text-label-code">&gt;</span>
+<span class="font-body-md text-body-md text-on-surface">Code Review &amp; Perf Profiling</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: PERSONAL WORKING STYLE (FROM IDEA TO PRODUCTION) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-lg">
+<div class="w-full bg-surface-container-low p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-body-md">reorder</span>
+<h2 class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest">
+            FROM IDEA TO PRODUCTION // ENGINEERING LIFECYCLE
+          </h2>
+</div>
+<span class="font-label-code text-label-code text-outline">EXECUTION STAGES: 04</span>
+</div>
+<!-- Chronological Connected Lifecycle Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md relative">
+<!-- Stage 01 -->
+<div class="bg-surface-container p-space-lg flex flex-col gap-space-sm relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-headline-sm text-secondary font-semibold">01</span>
+<span class="font-label-caps text-[0.625rem] text-outline tracking-wider">PHASE_ALPHA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">
+            UNDERSTAND &amp; SYNTHESIZE
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Collaborate with business analysts and system designers to define problem constraints and domain boundaries. Clarify edge cases before touching the keyboard.
+          </p>
+<div class="mt-auto pt-space-sm">
+<span class="font-label-code text-[0.6875rem] text-secondary tracking-tight">[ DOMAIN BOUNDARIES &amp; SCOPE ]</span>
+</div>
+</div>
+<!-- Stage 02 -->
+<div class="bg-surface-container p-space-lg flex flex-col gap-space-sm relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-headline-sm text-secondary font-semibold">02</span>
+<span class="font-label-caps text-[0.625rem] text-outline tracking-wider">PHASE_BETA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">
+            ARCHITECT &amp; CONTEXTUALIZE
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Structure system contracts, API endpoints, schema relations, and AI context prompts. Plan architectural trade-offs with deterministic rigor.
+          </p>
+<div class="mt-auto pt-space-sm">
+<span class="font-label-code text-[0.6875rem] text-secondary tracking-tight">[ CONTRACTS &amp; CONTEXT PROMPTS ]</span>
+</div>
+</div>
+<!-- Stage 03 -->
+<div class="bg-surface-container p-space-lg flex flex-col gap-space-sm relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-headline-sm text-secondary font-semibold">03</span>
+<span class="font-label-caps text-[0.625rem] text-outline tracking-wider">PHASE_GAMMA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">
+            BUILD &amp; AUGMENT
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Implement web, mobile, and backend services with AI-assisted velocity and rigorous type safety. Clean, idiomatic code with continuous validation.
+          </p>
+<div class="mt-auto pt-space-sm">
+<span class="font-label-code text-[0.6875rem] text-secondary tracking-tight">[ MULTI-PLATFORM RUNTIME ]</span>
+</div>
+</div>
+<!-- Stage 04 -->
+<div class="bg-surface-container p-space-lg flex flex-col gap-space-sm relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-headline-sm text-secondary font-semibold">04</span>
+<span class="font-label-caps text-[0.625rem] text-outline tracking-wider">PHASE_DELTA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">
+            HARDEN &amp; VALIDATE
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Penetration tests, edge-case validation, automated linting, security audits, and deployment observability with production monitoring.
+          </p>
+<div class="mt-auto pt-space-sm">
+<span class="font-label-code text-[0.6875rem] text-secondary tracking-tight">[ ZERO-TRUST &amp; OBSERVABILITY ]</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: CLOSING TRANSITION & DIRECTIONAL ROUTE -->
+<section class="w-full px-margin-mobile md:px-margin pt-space-lg pb-space-xl">
+<div class="w-full bg-surface-container-low p-space-lg md:p-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">MANIFESTO</span>
+<blockquote class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase">
+          "GOOD SOFTWARE IS BUILT WITH INTENTION AND TEAMWORK."
+        </blockquote>
+<span class="font-body-sm text-body-sm text-outline">Next Vector: Curated case studies and production architecture breakdowns across web, mobile &amp; AI systems.</span>
+</div>
+<!-- Action Button / Link to Screen 03 (Projects) -->
+<a class="inline-flex items-center justify-center gap-space-md px-space-xl py-space-md bg-secondary text-on-secondary-fixed hover:bg-secondary-fixed transition-colors font-label-caps text-label-caps uppercase tracking-wider group shrink-0 font-medium" data-path="projects" href="#">
+<span class="">EXPLORE SELECTED PROJECTS</span>
+<span class="material-symbols-outlined text-body-md group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant"><div class="w-full px-margin-mobile md:px-margin py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-body-sm">terminal</span><span class="font-label-caps text-label-caps text-on-surface uppercase">ARCHITECTURAL RUNTIME // SYS.VER 4.20 // VERIFIED REGISTRY</span></div><span class="font-body-sm text-body-sm text-outline">Crafting high-throughput distributed systems, AI context engines &amp; editorial web platforms.</span></div><div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md sm:gap-space-lg"><a class="font-label-code text-label-code text-outline hover:text-secondary transition-colors" href="mailto:omoloyeamoss65@gmail.com">omoloyeamoss65@gmail.com</a><span class="font-label-caps text-label-caps text-on-surface-variant">© 2025 OMOLOYE BOLUWATIFE (CODEX)</span></div></div></footer></body></html>
