@@ -8,7 +8,7 @@ export default function OpenSourceSection() {
         <span className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest block mb-2">/OPEN_SOURCE</span>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-sans">Built in the open, with intent.</h2>
       </div>
-      <a className="text-xs font-mono text-neutral-400 hover:text-white flex items-center gap-1 transition-colors self-start sm:self-end pb-1" href="https://github.com" rel="noopener noreferrer" target="_blank">
+      <a className="text-xs font-mono text-neutral-400 hover:text-white flex items-center gap-1 transition-colors self-start sm:self-end pb-1" href="https://github.com/Code-X65" rel="noopener noreferrer" target="_blank">
         View activity ↗
       </a>
     </div>
@@ -94,7 +94,7 @@ export default function OpenSourceSection() {
           <span className="text-[9px] text-neutral-500 uppercase tracking-widest block font-mono mt-0.5">PUBLIC ACTIVITY · CREATOR0009</span>
         </div>
       </div>
-      <a className="text-neutral-400 hover:text-white text-xs font-mono flex items-center gap-1 transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">
+      <a className="text-neutral-400 hover:text-white text-xs font-mono flex items-center gap-1 transition-colors" href="https://github.com/Code-X65" rel="noopener noreferrer" target="_blank">
         Open profile ↗
       </a>
     </div>

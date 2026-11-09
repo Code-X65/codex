@@ -157,12 +157,12 @@ export default function Contact({ onModuleClick }) {
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex flex-col">
-                    <span className="font-headline-sm text-headline-sm text-on-surface font-semibold">github.com/omoloye-codex</span>
+                    <span className="font-headline-sm text-headline-sm text-on-surface font-semibold">github.com/Code-X65</span>
                     <span className="font-body-sm text-body-sm text-outline">Production backends, system specs, open tools</span>
                   </div>
                   <a
                     className="w-10 h-10 bg-surface-container flex items-center justify-center text-on-surface hover:text-secondary hover:bg-surface-bright transition-colors rounded"
-                    href="https://github.com"
+                    href="https://github.com/Code-X65"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -179,16 +179,53 @@ export default function Contact({ onModuleClick }) {
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex flex-col">
-                    <span className="font-headline-sm text-headline-sm text-on-surface font-semibold">linkedin.com/in/omoloye-boluwatife</span>
+                    <span className="font-headline-sm text-headline-sm text-on-surface font-semibold">linkedin.com/in/codex65</span>
                     <span className="font-body-sm text-body-sm text-outline">Endorsements, tenure records, advisory reach</span>
                   </div>
                   <a
                     className="w-10 h-10 bg-surface-container flex items-center justify-center text-on-surface hover:text-secondary hover:bg-surface-bright transition-colors rounded"
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/codex65"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span className="material-symbols-outlined text-body-md select-none">north_east</span>
+                  </a>
+                </div>
+              </div>
+
+              {/* TELEGRAM & X / TWITTER & WHATSAPP CARD */}
+              <div className="bg-surface-container-low p-space-md flex flex-col gap-space-sm hover:bg-surface-container transition-colors rounded border border-outline-variant/30">
+                <div className="flex items-center justify-between">
+                  <span className="font-label-caps text-label-caps text-outline uppercase">[DIRECT CHANNELS // 04] REALTIME RELAYS</span>
+                  <span className="font-label-code text-label-code text-secondary">ACTIVE</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+                  <a
+                    href="https://t.me/Code_X65"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-space-sm bg-surface flex items-center justify-between hover:bg-surface-bright transition-colors rounded border border-outline-variant/20"
+                  >
+                    <span className="font-label-code text-label-code font-semibold">t.me/Code_X65</span>
+                    <span className="material-symbols-outlined text-body-sm select-none">north_east</span>
+                  </a>
+                  <a
+                    href="https://x.com/AmossOmolo71501"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-space-sm bg-surface flex items-center justify-between hover:bg-surface-bright transition-colors rounded border border-outline-variant/20"
+                  >
+                    <span className="font-label-code text-label-code font-semibold">x.com/AmossOmolo71501</span>
+                    <span className="material-symbols-outlined text-body-sm select-none">north_east</span>
+                  </a>
+                  <a
+                    href="https://wa.me/qr/6SFSY7CULLDEP1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-space-sm bg-surface flex items-center justify-between hover:bg-surface-bright transition-colors rounded border border-outline-variant/20"
+                  >
+                    <span className="font-label-code text-label-code font-semibold">WhatsApp Chat</span>
+                    <span className="material-symbols-outlined text-body-sm select-none">north_east</span>
                   </a>
                 </div>
               </div>

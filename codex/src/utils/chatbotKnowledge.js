@@ -57,8 +57,28 @@ export const KNOWLEDGE_BASE = [
   {
     keywords: ['contact', 'email', 'phone', 'reach', 'call', 'talk', 'hire him', 'message'],
     response:
-      "You can get in touch with Boluwatife directly via:\n\n• **Email**: Omoloyeamoss65@gmail.com\n• **Availability**: Select freelance contracts, consulting, & full-time roles\n• Or fill out the interactive project inquiry form at the bottom of the page!",
+      "You can get in touch with Boluwatife directly via:\n\n• Email: Omoloyeamoss65@gmail.com\n• WhatsApp: Instant Messaging\n• Telegram: @Code_X65\n• LinkedIn: in/codex65\n• Availability: Select freelance contracts, consulting, & full-time roles\n• Or fill out the interactive project inquiry form at the bottom of the page!",
     cta: { text: 'Jump to Contact Form', link: '#contact' },
+    socialLinks: [
+      { label: 'WhatsApp', url: 'https://wa.me/qr/6SFSY7CULLDEP1' },
+      { label: 'Telegram', url: 'https://t.me/Code_X65' },
+      { label: 'LinkedIn', url: 'https://www.linkedin.com/in/codex65' },
+      { label: 'X', url: 'https://x.com/AmossOmolo71501' },
+      { label: 'GitHub', url: 'https://github.com/Code-X65' },
+    ],
+  },
+  {
+    keywords: ['social', 'socials', 'telegram', 'twitter', 'x', 'linkedin', 'whatsapp', 'github', 'links', 'handles'],
+    response:
+      "Here are Boluwatife's verified social profiles and channels:\n\n• GitHub: github.com/Code-X65\n• Telegram: t.me/Code_X65\n• X / Twitter: x.com/AmossOmolo71501\n• LinkedIn: linkedin.com/in/codex65\n• WhatsApp: wa.me/qr/6SFSY7CULLDEP1\n• Email: Omoloyeamoss65@gmail.com",
+    cta: { text: 'Open Contact Section', link: '#contact' },
+    socialLinks: [
+      { label: 'GitHub', url: 'https://github.com/Code-X65' },
+      { label: 'Telegram', url: 'https://t.me/Code_X65' },
+      { label: 'X / Twitter', url: 'https://x.com/AmossOmolo71501' },
+      { label: 'LinkedIn', url: 'https://www.linkedin.com/in/codex65' },
+      { label: 'WhatsApp', url: 'https://wa.me/qr/6SFSY7CULLDEP1' },
+    ],
   },
   {
     keywords: ['hi', 'hello', 'hey', 'greetings', 'good morning', 'good afternoon', 'good evening', 'sup'],
@@ -95,6 +115,7 @@ export function getChatbotResponse(userQuery) {
       return {
         text: item.response,
         cta: item.cta,
+        socialLinks: item.socialLinks,
       }
     }
   }

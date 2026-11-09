@@ -211,7 +211,7 @@ export default function SidebarNav() {
         <div className="flex flex-col items-center gap-3 w-full">
           <a
             className="text-neutral-500 hover:text-white transition-colors p-1"
-            href="https://github.com"
+            href="https://github.com/Code-X65"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="GitHub Profile"
@@ -403,22 +403,60 @@ export default function SidebarNav() {
               </a>
             </div>
 
-            <div className="flex items-center gap-3">
-              <a
-                href="#contact"
-                onClick={(e) => handleLinkClick(e, '#contact')}
-                className="flex-1 py-3 bg-[#bbf451] text-black text-center font-bold text-xs uppercase tracking-wider hover:bg-[#a3e635] transition-colors"
-              >
-                Start a Project
-              </a>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-3 border border-[#212631] bg-[#0c0e12] text-neutral-300 hover:text-white text-xs font-bold uppercase tracking-wider transition-colors"
-              >
-                GitHub
-              </a>
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-3">
+                <a
+                  href="#contact"
+                  onClick={(e) => handleLinkClick(e, '#contact')}
+                  className="flex-1 py-3 bg-[#bbf451] text-black text-center font-bold text-xs uppercase tracking-wider hover:bg-[#a3e635] transition-colors"
+                >
+                  Start a Project
+                </a>
+                <a
+                  href="https://github.com/Code-X65"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-3 border border-[#212631] bg-[#0c0e12] text-neutral-300 hover:text-white text-xs font-bold uppercase tracking-wider transition-colors"
+                >
+                  GitHub
+                </a>
+              </div>
+
+              {/* Social Channels Row */}
+              <div className="grid grid-cols-4 gap-2 pt-2 border-t border-[#181d26]">
+                <a
+                  href="https://t.me/Code_X65"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-2 text-center text-[10px] font-mono uppercase tracking-wider border border-[#1e232d] bg-[#090b0e] text-neutral-400 hover:text-[#bbf451] hover:border-[#bbf451]/40 transition-colors"
+                >
+                  Telegram
+                </a>
+                <a
+                  href="https://x.com/AmossOmolo71501"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-2 text-center text-[10px] font-mono uppercase tracking-wider border border-[#1e232d] bg-[#090b0e] text-neutral-400 hover:text-[#bbf451] hover:border-[#bbf451]/40 transition-colors"
+                >
+                  X
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/codex65"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-2 text-center text-[10px] font-mono uppercase tracking-wider border border-[#1e232d] bg-[#090b0e] text-neutral-400 hover:text-[#bbf451] hover:border-[#bbf451]/40 transition-colors"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://wa.me/qr/6SFSY7CULLDEP1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-2 text-center text-[10px] font-mono uppercase tracking-wider border border-[#1e232d] bg-[#090b0e] text-neutral-400 hover:text-[#bbf451] hover:border-[#bbf451]/40 transition-colors"
+                >
+                  WhatsApp
+                </a>
+              </div>
             </div>
           </div>
         </div>

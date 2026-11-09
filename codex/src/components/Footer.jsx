@@ -57,20 +57,47 @@ export default function Footer() {
             <div className="flex flex-col gap-space-xs font-label-code text-label-code">
               <a
                 className="text-on-surface-variant hover:text-secondary inline-flex items-center gap-space-xs transition-colors"
-                href="https://github.com"
+                href="https://github.com/Code-X65"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span>GITHUB: codex-omoloye</span>
+                <span>GITHUB: Code-X65</span>
                 <span className="material-symbols-outlined text-body-sm select-none">north_east</span>
               </a>
               <a
                 className="text-on-surface-variant hover:text-secondary inline-flex items-center gap-space-xs transition-colors"
-                href="https://linkedin.com"
+                href="https://t.me/Code_X65"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span>LINKEDIN: omoloye-boluwatife</span>
+                <span>TELEGRAM: Code_X65</span>
+                <span className="material-symbols-outlined text-body-sm select-none">north_east</span>
+              </a>
+              <a
+                className="text-on-surface-variant hover:text-secondary inline-flex items-center gap-space-xs transition-colors"
+                href="https://x.com/AmossOmolo71501"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span>X / TWITTER: AmossOmolo71501</span>
+                <span className="material-symbols-outlined text-body-sm select-none">north_east</span>
+              </a>
+              <a
+                className="text-on-surface-variant hover:text-secondary inline-flex items-center gap-space-xs transition-colors"
+                href="https://www.linkedin.com/in/codex65"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span>LINKEDIN: in/codex65</span>
+                <span className="material-symbols-outlined text-body-sm select-none">north_east</span>
+              </a>
+              <a
+                className="text-on-surface-variant hover:text-secondary inline-flex items-center gap-space-xs transition-colors"
+                href="https://wa.me/qr/6SFSY7CULLDEP1"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span>WHATSAPP: Direct Chat</span>
                 <span className="material-symbols-outlined text-body-sm select-none">north_east</span>
               </a>
               <a

@@ -188,6 +188,23 @@ export default function PortfolioChatbot() {
                             )}
                           </div>
                         )}
+
+                        {msg.socialLinks && msg.socialLinks.length > 0 && (
+                          <div className="flex flex-wrap gap-1.5 pt-2">
+                            {msg.socialLinks.map((s, idx) => (
+                              <a
+                                key={idx}
+                                href={s.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1 px-2.5 py-1 bg-[#141a14] border border-[#273523] hover:border-[#bbf451] text-[#bbf451] text-[10px] font-mono transition-colors"
+                              >
+                                <span>{s.label}</span>
+                                <span className="text-[9px]">↗</span>
+                              </a>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
