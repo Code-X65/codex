@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
 @theme {
+  --color-brand-lime: #bbf451;
+  --color-brand-limeHover: #a3e635;
+  --color-brand-darkBg: #08090a;
+  --color-brand-cardBg: #0f1115;
+  --color-brand-cardBorder: #1c2026;
+  --color-brand-borderSubtle: #181b20;
+  --color-brand-textMuted: #717885;
+  --color-brand-tagBg: #14171d;
+
   --color-surface-variant: #343535;
   --color-secondary-fixed-dim: #ffb59d;
   --color-outline: #8e9192;
@@ -247,5 +256,25 @@ html:not(.dark) {
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-secondary);
+  background: #bbf451;
+}
+
+/* Subtle grid pattern background */
+.tech-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Dot grid matrix pattern for Selected Work section matching reference */
+.dot-matrix-grid {
+  background-color: #0a0a0c;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Glow utility */
+.glow-lime {
+  box-shadow: 0 0 20px -3px rgba(187, 244, 81, 0.15);
 }

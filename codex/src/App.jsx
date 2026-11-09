@@ -6,7 +6,13 @@ import Toast from './components/Toast'
 import VariantSwitcher from './components/VariantSwitcher'
 import { VariantProvider, useVariant } from './context/VariantContext'
 
-// V1 Pages
+// Replica (Stitch) Page
+import ReplicaHome from './pages/ReplicaHome'
+import InterfaceContractArticle from './pages/InterfaceContractArticle'
+import WebProtocolsArticle from './pages/WebProtocolsArticle'
+import RestVsGraphqlArticle from './pages/RestVsGraphqlArticle'
+
+// Legacy V1 (Now V2) Pages
 import HeroHome from './pages/HeroHome'
 import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects'
@@ -134,12 +140,29 @@ function PortfolioLayout() {
     }, 4500)
   }
 
+  if (activeVariant === 1) {
+    return (
+      <div className="min-h-screen bg-[#07080a] text-[#e2e8f0]">
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<ReplicaHome />} />
+          <Route path="/writing/interface-is-a-contract" element={<InterfaceContractArticle />} />
+          <Route path="/writing/web-protocols-explained" element={<WebProtocolsArticle />} />
+          <Route path="/writing/rest-vs-graphql" element={<RestVsGraphqlArticle />} />
+          <Route path="*" element={<ReplicaHome />} />
+        </Routes>
+        <VariantSwitcher />
+        <Toast message={toastMessage} onClose={() => setToastMessage(null)} />
+      </div>
+    )
+  }
+
   return (
     <div className="flex flex-col min-h-screen bg-surface text-on-surface">
       <ScrollToTop />
       <Navbar onModuleClick={handleModuleClick} />
       <main className="flex-1 w-full pt-16">
-        {activeVariant === 1 ? (
+        {activeVariant === 2 ? (
           <Routes>
             <Route path="/" element={<HeroHome />} />
             <Route path="/about" element={<AboutMe />} />
